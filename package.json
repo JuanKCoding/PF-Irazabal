@@ -1,0 +1,25 @@
+{
+  "name": "portafolio-web",
+  "version": "1.0.0",
+  "description": "Este proyecto demuestra mis aptitudes como desarrollador web 🦾. Los cuales abarcan tecnologías y conocimientos como son:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanKCoding/Portafolio-Web.git"
+  },
+  "author": "Juan Cruz Irazabal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanKCoding/Portafolio-Web/issues"
+  },
+  "homepage": "https://github.com/JuanKCoding/Portafolio-Web#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

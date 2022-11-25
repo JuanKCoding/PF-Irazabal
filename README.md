@@ -6,4 +6,4 @@ Este proyecto demuestra mis aptitudes como desarrollador web 🦾. Los cuales ab
 - CSS: estilos, clases, flexbox, grids, responsive y animaciones
 - Git: uso de github, armado de repositorio, manejo de ramas e implementación en github-pages
 
-**En la siguiente URL podras ver el resultado al momento:** 👉  [Link a la demo](https://juankcoding.github.io/Portafolio-Web/).
+**En la siguiente URL podras ver el resultado al momento:** 👉  [Link a la demo](https://juankcoding.github.io/PF-Irazabal/).

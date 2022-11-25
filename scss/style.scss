@@ -1,3 +1,5 @@
+@import 'variables' ;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -279,6 +281,7 @@ footer {
 }
 .titulo {
 	color: white;
+	font-size: 50px;
 }
 .subtexto {
 	margin-top: 20px;
@@ -301,51 +304,110 @@ footer {
 }
 .item-1 {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	grid-area: item-1;
-	height: 200px;
+	height: 400px;
+	width: 350px;
+}
+.banner-image-mexx {
+	background-image: url(mexx.png);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
 	width: 100%;
+	border-radius: 12px;
+	border: none;
+}
+#mexx {
+	text-align: center;
+	margin: 3% 0% 3% 0%;
+	color: white;
+	font-size: 35px;
+}
+#mexx2 {
+	text-align: center;
+	margin: 0 10% 3% 10%;
 }
 .item-2 {
 	display: flex;
 	justify-content: center;
 	grid-area: item-2;
-	height: 200px;
+	height: 400px;
+	width: 350px;
+}
+.banner-image-compragamer {
+	background-image: url(compragamer.png);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
 	width: 100%;
+	border-radius: 12px;
+	border: none;
 }
 .item-3 {
 	display: flex;
 	justify-content: center;
 	grid-area: item-3;
-	height: 200px;
+	height: 400px;
+	width: 350px;
+}
+.banner-image-maldito {
+	background-image: url(maldito.png);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
 	width: 100%;
+	border-radius: 12px;
+	border: none;
 }
 .item-4 {
 	display: flex;
 	justify-content: center;
 	grid-area: item-4;
-	height: 200px;
-	width: 100%;
+	height: 400px;
+	width: 350px;
 }
-section {
-	h1 {
-		display: flex;
-		justify-content: center;
-		margin: 5% 0% 0% 0%;
-		color: white;
-		font-size: 50px;
+.banner-image-maximus {
+	background-image: url(maximus.png);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	border-radius: 12px;
+	border: none;
+}
+.button-wrapper {
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+.btn {
+	border: none;
+	padding: 12px 24px;
+	border-radius: 24px;
+	font-size: 12px;
+	font-size: 0.8rem;
+	letter-spacing: 2px;
+	cursor: pointer;
+	+ {
+		.btn {
+			margin-left: 10px;
+		}
 	}
 }
-.port-img {
-	width: 1px;
-	height: 10px;
-	margin: 10px;
+.fill {
+	background: #ea153900;
 	border: 1px solid rgba(255, 255, 255, 0.24);
-	border-radius: 10px;
+	color: rgba(255, 255, 255, 0.95);
+	filter: drop-shadow(0);
+	font-weight: bold;
+	transition: all 0.3 ease;
 	&:hover {
-		box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-		transition: .3s;
-		cursor: pointer;
+		transform: scale(1.125);
+		border-color: rgba(255, 255, 255, 0.9);
+		filter: drop-shadow(0 10px 5 px rgba(0, 0, 0, 0.125));
+		transition: all 0.3s ease;
 	}
 }
 .container__card {
@@ -663,65 +725,6 @@ section {
 			text-decoration: none;
 		}
 	}
-	.section-grid {
-		display: grid;
-		grid-gap: 15px 20px;
-		grid-template-areas: "item-1 item-2" "item-3 item-4";
-		margin-top: 8%;
-		margin-bottom: 8%;
-	}
-	.item-general {
-		color: white;
-	}
-	.item-1 {
-		display: flex;
-		justify-content: center;
-		grid-area: item-1;
-		height: 200px;
-		width: 100%;
-	}
-	.item-2 {
-		display: flex;
-		justify-content: center;
-		grid-area: item-2;
-		height: 200px;
-		width: 100%;
-	}
-	.item-3 {
-		display: flex;
-		justify-content: center;
-		grid-area: item-3;
-		height: 200px;
-		width: 100%;
-	}
-	.item-4 {
-		display: flex;
-		justify-content: center;
-		grid-area: item-4;
-		height: 200px;
-		width: 100%;
-	}
-	section {
-		h1 {
-			display: flex;
-			justify-content: center;
-			margin: 5% 0% 0% 0%;
-			color: white;
-			font-size: 50px;
-		}
-	}
-	.port-img {
-		width: 1px;
-		height: 10px;
-		margin: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.24);
-		border-radius: 10px;
-		&:hover {
-			box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-			transition: .3s;
-			cursor: pointer;
-		}
-	}
 }
 @media only screen and (max-width: 699px) {
 	.navbar {
@@ -840,50 +843,65 @@ section {
 		display: flex;
 		justify-content: center;
 		grid-area: item-1;
-		height: 200px;
+		height: 400px;
 		width: 100%;
+	}
+	.banner-image-mexx {
+		background-image: url(mexx.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
 	}
 	.item-2 {
 		display: flex;
 		justify-content: center;
 		grid-area: item-2;
-		height: 200px;
+		height: 400px;
 		width: 100%;
+	}
+	.banner-image-compragamer {
+		background-image: url(compragamer.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
 	}
 	.item-3 {
 		display: flex;
 		justify-content: center;
 		grid-area: item-3;
-		height: 200px;
+		height: 400px;
 		width: 100%;
+	}
+	.banner-image-maldito {
+		background-image: url(maldito.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
 	}
 	.item-4 {
 		display: flex;
 		justify-content: center;
 		grid-area: item-4;
-		height: 200px;
+		height: 400px;
 		width: 100%;
 	}
-	section {
-		h1 {
-			display: flex;
-			justify-content: center;
-			margin: 5% 0% 0% 0%;
-			color: white;
-			font-size: 40px;
-		}
-	}
-	.port-img {
-		width: 1px;
-		height: 10px;
-		margin: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.24);
-		border-radius: 10px;
-		&:hover {
-			box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-			transition: .3s;
-			cursor: pointer;
-		}
+	.banner-image-maximus {
+		background-image: url(maximus.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
 	}
 }
 @media only screen and (max-width: 419px) {
@@ -1234,5 +1252,81 @@ section {
 			cursor: pointer;
 			text-decoration: none;
 		}
+	}
+}
+@media only screen and (max-width: 1805px) {
+	.section-grid {
+		display: grid;
+		grid-gap: 15px 20px;
+		grid-template-areas: "item-1 item-2" "item-3 item-4";
+		margin-top: 8%;
+		margin-bottom: 8%;
+	}
+	.item-general {
+		color: white;
+	}
+	.item-1 {
+		display: flex;
+		justify-content: center;
+		grid-area: item-1;
+		height: 400px;
+		width: 100%;
+	}
+	.banner-image-mexx {
+		background-image: url(mexx.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
+	}
+	.item-2 {
+		display: flex;
+		justify-content: center;
+		grid-area: item-2;
+		height: 400px;
+		width: 100%;
+	}
+	.banner-image-compragamer {
+		background-image: url(compragamer.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
+	}
+	.item-3 {
+		display: flex;
+		justify-content: center;
+		grid-area: item-3;
+		height: 400px;
+		width: 100%;
+	}
+	.banner-image-maldito {
+		background-image: url(maldito.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
+	}
+	.item-4 {
+		display: flex;
+		justify-content: center;
+		grid-area: item-4;
+		height: 400px;
+		width: 100%;
+	}
+	.banner-image-maximus {
+		background-image: url(maximus.png);
+		background-position: center;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+		border-radius: 12px;
+		border: none;
 	}
 }
